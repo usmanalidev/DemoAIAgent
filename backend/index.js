@@ -4,12 +4,13 @@ const PORT = 5000;
 const cors = require('cors');
 
 app.use(cors({
-  origin: 'http://localhost:3000/'
+  origin: 'http://localhost:3000'
 }));
 
 app.get('/', (req, res) => {
   res.send('Hello from backend!');
 });
+
 
 app.get('/hello', (req, res) => {
   res.json({ message: 'Hello World!' });
